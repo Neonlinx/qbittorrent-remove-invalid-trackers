@@ -6,10 +6,10 @@ import re
 import bencodepy
 
 # === CONFIGURAZIONE ===
-QBITTORRENT_PATH = r"C:\Users\Nirva\AppData\Local\qBittorrent"  # <-- Modifica se serve
-BT_BACKUP_PATH = os.path.join(QBITTORRENT_PATH, "BT_backup")
-TRACKER_PATTERN = r"chihaya\.de|pybittrack\.retiolus\.net"
-LOG_FILE = os.path.join(QBITTORRENT_PATH, "tracker_removal_log.csv")
+QBITTORRENT_PATH = r"C:\Users\User\AppData\Local\qBittorrent"  # <-- Modifica se serve. Questa è la cartella predefinita
+BT_BACKUP_PATH = os.path.join(QBITTORRENT_PATH, "BT_backup")  # <-- Viene usata la cartella predefinita per i files .torrent e fastresume
+TRACKER_PATTERN = r"chihaya\.de|pybittrack\.retiolus\.net"  # <-- Indirizzi trackers usati come esempio
+LOG_FILE = os.path.join(QBITTORRENT_PATH, "tracker_removal_log.csv")  # <-- Edita il nome del file CSV a piacimento
 
 # === FUNZIONE DI ELABORAZIONE ===
 def process_files(dry_run=True):
@@ -107,3 +107,4 @@ if dry_run:
         print("\n✅ Operazione terminata senza modifiche.")
 else:
     print("\n✅ Operazione completata.")
+
