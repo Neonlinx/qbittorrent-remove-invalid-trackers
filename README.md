@@ -1,5 +1,5 @@
 # qbittorrent-remove-invalid-trackers
-A simple python script to remove a specific tracker(s) from every torrent using API and fastresume files.
+A simple (and personal) python script to remove specific tracker(s) from every torrent using qbittorrent API and fastresume files.
 
 ENGLISH:
 Especially with torrents from public trackers, it happens that many files use trackers that are now unreachable, dead or with an error. This not only wastes resources but also the user's patience, especially if you use antivirus or other security systems that analyze network traffic. In my case, for example, the antivirus sent me a notification every time a file tried to connect to trackers that used expired certificates. Hence the need to create a small and very simple script to remove these trackers from the files.
